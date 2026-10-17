@@ -62,7 +62,7 @@ VENT = {
 }
 TOP_DIM = "600 = 4 × 150"
 
-TITLE_INFO = ["保荣摄影灯外壳", "材料: 2mm 不锈钢板(304)",
+TITLE_INFO = ["保荣摄影灯外壳", "材料: 1mm 不锈钢板",
               "洞洞板展开图 1:1", "折弯内r≥1.5t"]
 
 C_INK = "#2A2A35"      # 鸦青 实体轮廓
@@ -555,7 +555,7 @@ def sheet():
     fig = plt.figure(figsize=(12.8, 7.6), dpi=DPI, facecolor=C_BG)
     fig.text(0.5, 0.965, "保荣摄影灯外壳 · 钣金展开图", fontproperties=fpb,
              fontsize=16, color=C_INK, ha="center")
-    fig.text(0.5, 0.938, "15 × 15 × 27 cm 方灯壳　|　2mm 不锈钢板　|　单位:mm",
+    fig.text(0.5, 0.938, "15 × 15 × 27 cm 方灯壳　|　1mm 不锈钢板　|　单位:mm",
              fontproperties=fp, fontsize=10, color=C_TXT, ha="center")
 
     ax = fig.add_axes([0.12, 0.06, 0.78, 0.84])
@@ -650,12 +650,12 @@ def plate_png(path, with_clip, title):
     if with_clip:
         fig.text(0.5, 0.965, "保荣摄影灯外壳 · 端板 A（最外端板·带卡口）", fontproperties=fpb,
                  fontsize=15, color=C_INK, ha="center")
-        fig.text(0.5, 0.02, "图号 BR-LAMP-02　|　比例 1:1　|　2mm 不锈钢　|　尺寸单位 mm",
+        fig.text(0.5, 0.02, "图号 BR-LAMP-02　|　比例 1:1　|　1mm 不锈钢　|　尺寸单位 mm",
                  fontproperties=fp, fontsize=8.5, color=C_DIM, ha="center")
     else:
         fig.text(0.5, 0.965, "保荣摄影灯外壳 · 端板 B（中间端板·无卡口）", fontproperties=fpb,
                  fontsize=15, color=C_INK, ha="center")
-        fig.text(0.5, 0.02, "图号 BR-LAMP-03　|　比例 1:1　|　2mm 不锈钢　|　尺寸单位 mm",
+        fig.text(0.5, 0.02, "图号 BR-LAMP-03　|　比例 1:1　|　1mm 不锈钢　|　尺寸单位 mm",
                  fontproperties=fp, fontsize=8.5, color=C_DIM, ha="center")
     fig.savefig(path, dpi=DPI, facecolor=C_BG)
     plt.close(fig)
